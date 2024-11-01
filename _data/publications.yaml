@@ -1,0 +1,63 @@
+papers:
+
+  - title: "Final thesis"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "thesis"
+    paper_pdf: "assets/works/Final/Final thesis.pdf"
+    year: "thesis"
+  
+  - title: "Thesis presentation"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "thesis"
+    paper_pdf: "assets/works/Final/Thesis presentation.pdf"
+    year: "thesis"
+
+  - title: "Internship CVNN"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "CVNN"
+    paper_pdf: "assets/works/Internship_CVNN/doct.pdf"
+    year: "intern"
+
+  - title: "ISGNS_CVNN_29NOV"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "CVNN"
+    paper_pdf: "assets/works/Internship_CVNN/ISGNS_CVNN_29NOV.pdf"
+    year: "intern"
+  
+  - title: "MAML"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "MAML"
+    paper_pdf: "assets/works/MAML/MAML.pdf"
+    year: "maml"
+
+  - title: "MAML vs FOMAML"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "MAML"
+    paper_pdf: "assets/works/MAML/MAML vs FOMAML.pdf"
+    year: "maml"
+  
+  - title: "A Complex Network Analysis of the OPEC Crude_Oil Trade Network"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "others"
+    paper_pdf: "assets/works/A Complex Network Analysis of the OPEC Crude_Oil Trade Network.pdf"
+    year: "others"
+
+  - title: "Different clustering methonds and differences"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "others"
+    paper_pdf: "assets/works/Different clustering methonds and differences.pdf"
+    year: "others"
+    
+  - title: "NAPC-2025-CombInst-Wavelet-Manuscript"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "others"
+    paper_pdf: "assets/works/NAPC-2025-CombInst-Wavelet-Manuscript.pdf"
+    year: "others"
+    
+  - title: "Review_NNP-water"
+    authors: "<b>Saumya Vilas Roy</b>, "
+    venue: "others"
+    paper_pdf: "assets/works/Review_NNP-water.pdf"
+    year: "others"
+    
+  

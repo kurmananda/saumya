@@ -1,0 +1,20 @@
+experiences:  
+- place: "Research Intern"
+  time: "Jun. 2024 - "
+  title: "Vehicle Dynamics Lab, Indian Institure of Technology, Delhi"
+  subtitle: "Advisor: <a href='#'  style='text-decoration: none;'>Prof. Husain Kanchwala</a>"
+  category: "school"
+
+
+- place: "Summer Intern"
+  time: "May. 2023 - Aug. 2023"
+  title: "National Remote Sensing Center, Indian Space Research Organisation(ISRO)"
+  subtitle: "Host: <a href='#  style='text-decoration: none;'>Prof. Deepak Mishra(IIST)</a>"
+  category: "work"
+
+- place: "Indian Institute of Space Science and Technology"
+  time: "Nov. 2020 - May. 2024"
+  title: "B.Tech in Electronics and Communicational Engineering"
+  subtitle: "Kerala"
+  category: "school"
+    

@@ -9,7 +9,7 @@ papers:
   - title: "Thesis presentation"
     authors: "<b>Saumya Vilas Roy</b>, "
     venue: "thesis"
-    paper_pdf: "assets/works/Final/Thesis presentation.pdf"
+    code: "assets/works/Final/Thesis presentation.pdf"
     year: "thesis"
 
   - title: "Internship CVNN"

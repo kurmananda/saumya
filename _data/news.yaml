@@ -1,15 +1,15 @@
 
 news:
 
-  - content: '<b>Feb., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper at <b style="color:#fa8072;">Frontier Symposium on Model Agnostic Meta-Learning (MAML) vs First Order Model Agnostic Meta-Learning (FoMAML)</b>.'
+  - content: '<b>Feb., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;A paper<b style="color:#fa8072;">Frontier Symposium in Data Science 2024</b>, Model Agnostic Meta-Learning (MAML) vs First Order Model Agnostic Meta-Learning (FoMAML) on few-shots classiﬁcation problem. <a>'
     year: "2024"
 
-  - content: '<b>Jan., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper at <b style="color:#fa8072;">RAICS 2024</b> - A Complex Network Analysis of the OPEC Crude Oil Trade Network.'
+  - content: '<b>Jan., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper at <b style="color:#fa8072;">RAICS 2024 [RAICS]</b>, A Complex Network Analysis of the OPEC Crude Oil Trade Network. <a>https://www.isgns2023.com/</a></a>'
     year: "2024"
 
-  - content: '<b>Nov., 2023</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper at <b style="color:#fa8072;">ISG-ISRS 2023 [ISG - ISRS National Symposium]</b> on Complex Valued U-Net for Segmentation of PolSAR Images.'
+  - content: '<b>Nov., 2023</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper <b style="color:#fa8072;">Complex Valued U-Net for Segmentation of PolSAR Images</b>  ISG-ISRS 2023 [ISG - ISRS National Symposium] <a>https://www.isgns2023.com/</a>'
     year: "2023"
     
-  - content: '<b>Jun., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper at <b style="color:#fa8072;">NAPC 2025</b> on - Combined FFT and Wavelet Analysis of Schlieren and Flame Luminosity Time-Series to Visualize Regions of Combustion Instability.'
+  - content: '<b>Jun., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp; A paper at <b style="color:#fa8072;">NAPC 2025</b>, Combined FFT and Wavelet Analysis of Schlieren and Flame Luminosity Time-Series to Visualize Regions of Combustion Instability. <a>https://nccrd.iitm.ac.in/napc-2025/index.html</a>'
     year: "preprint"
 

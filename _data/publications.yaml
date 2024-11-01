@@ -21,7 +21,7 @@ papers:
   - title: "ISGNS_CVNN_29NOV"
     authors: "<b>Saumya Vilas Roy</b>, "
     venue: "CVNN"
-    paper_pdf: "assets/works/Internship_CVNN/ISGNS_CVNN_29NOV.pdf"
+    code: "assets/works/Internship_CVNN/ISGNS_CVNN_29NOV.pdf"
     year: "intern"
   
   - title: "MAML"
@@ -33,7 +33,7 @@ papers:
   - title: "MAML vs FOMAML"
     authors: "<b>Saumya Vilas Roy</b>, "
     venue: "MAML"
-    paper_pdf: "assets/works/MAML/MAML vs FOMAML.pdf"
+    code: "assets/works/MAML/MAML vs FOMAML.pdf"
     year: "maml"
   
   - title: "A Complex Network Analysis of the OPEC Crude_Oil Trade Network"
@@ -57,7 +57,7 @@ papers:
   - title: "Review_NNP-water"
     authors: "<b>Saumya Vilas Roy</b>, "
     venue: "others"
-    paper_pdf: "assets/works/Review_NNP-water.pdf"
+    code: "assets/works/Review_NNP-water.pdf"
     year: "others"
     
   

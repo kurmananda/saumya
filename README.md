@@ -19,5 +19,10 @@
 ### Publications :
 ### My works :
 ### References :
+- go to the outer most index.html file and scroll down
+- change the text in ```<p>``` (paragraph) which is under the "References" heading in ```<h4>```(heading).
+- add anchors(<a>) wherever necessary by just tagging them around the word and link in href.
+-  example : ``` <a href="your link">appearing name</a> ```
+-  if you want to open mail by clicking on link just add ```href="mailto:mraimundo@ic.unicamp.br"``` "mailto:" as shown
 ### map of your work :
 ### footer :

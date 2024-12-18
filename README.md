@@ -48,12 +48,12 @@
 - add anchors(<a>) wherever necessary by just tagging them around the word and link in href.
 -  example : ``` <a href="your link">appearing name</a> ```
 -  if you want to open mail by clicking on link just add ```href="mailto:mraimundo@ic.unicamp.br"``` "mailto:" as shown
-### map of your work :
+### Map of your work :
 - go to the _data.
 - then open publications.yaml
 - you can change the data existing like : 'place, time, title, subtitle, category(school on right and work on left side of map)'
 - you can add another by just copy pasting the exting work and changing the variables..!
-### footer :
+### Footer :
 - the name or emal or any other link in footer can be edited, added or changed by:
 - go to _layouts folder
 - open default.html

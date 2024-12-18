@@ -32,7 +32,7 @@
 - scroll down to class named "footer"
 - the link inside the last two old icons automatically gets changed once you change the links in main_info.yaml
 - In the new icon's(if added) you can change link there itself or create a new variable in main_info.yaml and add ```onclick="window.open('{{ site.data.main_info.new_icon }}')"``` as an attribute
-- you can add another icon by adding this :```<span onclick="window.open('{{ site.data.main_info.newicon }}')" style="cursor: pointer">
-<i class="fa fa-github" aria-hidden="true"></i>
-</span>```  along with the other two icons.
+- you can add another icon by adding this :
+```<span onclick="window.open('{{ site.data.main_info.newicon }}')" style="cursor: pointer">```
+```<i class="fa fa-github" aria-hidden="true"></i> </span>```  along with the other two icons.
 - the name and the email gets changed automatically according to 

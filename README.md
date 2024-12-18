@@ -6,6 +6,14 @@
 - then go to main_info.yaml.
 - here you can change your name, profile pic, title and any other links.
 ### The navigation bar:
+- tags in navbar can be edited, added or changed by:
+- go to _layouts folder
+- open default.html
+- scroll down to class named "navbar"
+- You can directly change the name or any link in the tab here and navigate it to "#(id_of_the_target_content)"
+- you can add another icon by adding this :
+```<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>CV</a></li>```
+-but don't forget to name the target and paste the same name with "#" before..
 ### Bio :
 - go to the outer most index.html file
 - change the text in ```<p>``` (paragraph) which is under the "Bio" heading in ```<h4>```(heading).
@@ -35,4 +43,4 @@
 - you can add another icon by adding this :
 ```<span onclick="window.open('{{ site.data.main_info.newicon }}')" style="cursor: pointer">```
 ```<i class="fa fa-github" aria-hidden="true"></i> </span>```  along with the other two icons.
-- the name and the email gets changed automatically according to 
+- the name and the email gets changed automatically according to what you save there.

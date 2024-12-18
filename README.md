@@ -12,6 +12,10 @@
 - add anchors(<a>) wherever necessary by just tagging them around the word and link in href.
 -  example : ``` <a href="your link">appearing name</a> ```
 ### My current research :
+- go to the outer most index.html file
+- change the text in ```<b>``` (bold) which is under the "current research" heading in ```<p>, <b>``` (bold paragraph).
+- add anchors(<a>) wherever necessary by just tagging them around the word and link in href.
+-  example : ``` <a href="your link">appearing name</a> ```
 ### Publications :
 ### My works :
 ### References :

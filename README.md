@@ -8,7 +8,7 @@
 ### The navigation bar:
 ### Bio :
 - go to the outer most index.html file
-- change the text in <p>(paragraph) which is under the "Bio" heading in <h4>(heading).
+- change the text in ```<p>``` (paragraph) which is under the "Bio" heading in ```<h4>```(heading).
 - add anchors(<a>) wherever necessary by just tagging them around the word and link in href.
 -  example : ``` <a href="your link">appearing name</a> ```
 ### My current research :

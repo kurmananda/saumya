@@ -5,7 +5,7 @@ title: Home
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
-  <p>
+  <p> MSc Data-Driven Health Student at KTH Royal Institute of Technology, Stockholm Sweden.
     Passionate
     <a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning/Deep Learning</a>
     enthusiast with 2.5 years of hands-on experience in
@@ -21,17 +21,6 @@ title: Home
     <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> and deep learning advancements.
 
 
-  <p>
-    <b style="font-size: larger;">My current research :</b><br>
-    -> <b>Saumya Vilas Roy*</b>, <u>Deepak Mishra & Marcos M. Raimundo</u>. HybridMorph: Bridging the Gap between
-    Synthetic and Real Data for Accurate MR Image Registration. (ManuScript in preparation)
-    <br>
-    -> <b>Saumya Vilas Roy*</b>, <u>Deepak Mishra, Satheesh K. & Rajesh Sadananan</u>. Estimating Non-Uniform Temperature Profiles in
-    Combustion Systems using Laser Absorption Spectroscopy and Multi-Output Gaussian Process Regression. (ManuScript in
-    preparation)
-    <br>
-    -> <b>Saumya Vilas Roy*</b>, <u>Husain Kanchwala & Ankur Miglani</u>. Deep CNN-based damage classification of milled what grains
-    using a high-magnification image dataset. (ManuScript in preparation)
   </p>
 
 </div>
@@ -67,10 +56,13 @@ title: Home
 
   <ul class="tab-nav">
     <li>
-      <div class="button" data-ref="#news-preprint">Upcoming</div>
+      <div class="button" data-ref="#news-upcoming">Upcoming</div>
     </li>
     <li>
-      <div class="button active" data-ref="#news-2024">2024</div>
+      <div class="button active" data-ref="#news-2025">2025</div>
+    </li>
+    <li>
+      <div class="button" data-ref="#news-2024">2024</div>
     </li>
     <li>
       <div class="button" data-ref="#news-2023">2023-Past</div>
@@ -78,7 +70,16 @@ title: Home
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane active" id="news-2024">
+       <div class="tab-pane active" id="news-2025">
+      {% assign news2025 = site.data.news.news | where: "year", "2025" %}
+      {% for news in news2025 %}
+      <div class="news">
+        <li>{{ news.content }}</li>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="news-2024">
       {% assign news2024 = site.data.news.news | where: "year", "2024" %}
       {% for news in news2024 %}
       <div class="news">
@@ -94,8 +95,8 @@ title: Home
       {% endfor %}
     </div>
 
-    <div class="tab-pane" id="news-preprint">
-      {% assign news2022 = site.data.news.news | where: "year", "preprint" %}
+    <div class="tab-pane" id="news-upcoming">
+      {% assign news2022 = site.data.news.news | where: "year", "upcoming" %}
       {% for news in news2022 %}
       <div class="news">
         <li>{{ news.content }}</li>
@@ -236,8 +237,8 @@ title: Home
 <div class="docs-section" id="mentee">
   <h4>REFERENCES</h4>
   <p>
-    <b>Husain Kanchwala</b> Assistant Professor, Center for Automotive Research and Tribology, IIT Delhi
- Email: <a href="mailto:husaink@iitd.ac.in">husaink@iitd.ac.in</a>, Phone: +91-112-6548571. <br>
+    <!-- <b>Husain Kanchwala</b> Assistant Professor, Center for Automotive Research and Tribology, IIT Delhi
+ Email: <a href="mailto:husaink@iitd.ac.in">husaink@iitd.ac.in</a>, Phone: +91-112-6548571. <br> -->
     <b>Deepak Mishra</b> Department of Avionics, Indian Institute of Space Science and Technology,
  Email: <a href="mailto:deepak.mishra@iist.ac.in">deepak.mishra@iist.ac.in</a>, Phone: +91-471-2568583. <br>
     <b>Marcos M. Raimundo</b> Assistant Professor, Institute of Computing, University of Campinas,
@@ -266,8 +267,12 @@ title: Home
           <div class="flag-wrapper">
             <span class="flag">{{ exp.place }}</span>
             <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+         </div>
+          <div class="desc">
+            <b>{{ exp.title }}</b><br />
+            {{ exp.subtitle }}<br />
+            <span class="country">{{ exp.country }}</span>
           </div>
-          <div class="desc"><b>{{ exp.title }}</b> <br /> {{ exp.subtitle }}</div>
         </div>
     </li>
     {% endfor %}

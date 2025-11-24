@@ -42,6 +42,13 @@ papers:
     paper_pdf: "assets/works/A Complex Network Analysis of the OPEC Crude_Oil Trade Network.pdf"
     year: "others"
 
+  - title: "HybridMorph: Towards usage of synthetic with real data for medical MR images registration"
+    authors: "<b></b>, "
+    venue: " "
+    paper_pdf: "assets/works/HybridMorph/HybridMorph.pdf"
+    year: "others"
+
+
   - title: "Different clustering methonds and differences"
     authors: "<b></b>, "
     venue: " "

@@ -1,8 +1,24 @@
 experiences:  
+
+- place: "Gradudate Degree"
+  time: "Aug. 2025 - Jul 2027"
+  title: "MSc in Data-Driven Health"
+  subtitle: "KTH Royal Institute of Technology"
+  country: "Stockholm, Sweden"
+  category: "work"
+
+- place: "Research Boot-camp"
+  time: "Nov 2025"
+  title: "Unite! Research School 2025"
+  subtitle: "Grenoble INP - UGA"
+  country: "Grenoble, France"
+  category: "school"
+
 - place: "Research Intern"
-  time: "Jun. 2024 - "
+  time: "Jun. 2024 - Jan 2025"
   title: "Vehicle Dynamics Lab, Indian Institure of Technology, Delhi"
   subtitle: "Advisor: <a href='#'  style='text-decoration: none;'>Prof. Husain Kanchwala</a>"
+  country: "New Delhi, India"
   category: "school"
 
 
@@ -10,11 +26,13 @@ experiences:
   time: "May. 2023 - Aug. 2023"
   title: "National Remote Sensing Center, Indian Space Research Organisation(ISRO)"
   subtitle: "Host: <a href='#'  style='text-decoration: none;'>Mrs. Haripriya S</a>"
-  category: "work"
+  country: "Telangana, India"
+  category: "school"
 
 - place: "Undergraduate Degree"
   time: "Nov. 2020 - May. 2024"
   title: "B.Tech in Electronics and Communicational Engineering"
   subtitle: "Indian Institute of Space Science and Technology <br>Mentor: <a href='#'  style='text-decoration: none;'>Prof. Deepak Mishra</a> "
-  category: "school"
+  country: "Kerela, India"
+  category: "work"
     

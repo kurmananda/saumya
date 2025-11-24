@@ -1,16 +1,17 @@
-
 news:
 
-  - content: '<b>Feb., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">Frontier Symposium in Data Science 2024</b>, Model Agnostic Meta-Learning (MAML) vs First Order Model Agnostic Meta-Learning (FoMAML) on few-shots classification problem.<br>&nbsp;&nbsp;&nbsp;&nbsp;->3rd position in student’s flash talks 
-'
+  - content: '<b>Feb., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">Frontier Symposium in Data Science 2024</b>, Model Agnostic Meta-Learning (MAML) vs First Order Model Agnostic Meta-Learning (FoMAML) on few-shots classification problem.<br>&nbsp;&nbsp;&nbsp;&nbsp;->3rd position in student’s flash talks '
+    year: "2024"
+  - content: '<b>Jan., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">Recent Advances in Intelligent Computational Systems International Conference 2024 </b>, A Complex Network Analysis of the OPEC Crude Oil Trade Network. <a href="https://www.isgns2023.com/">https://www.isgns2023.com/</a>'
     year: "2024"
 
-  - content: '<b>Jan., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">RAICS 2024 [RAICS]</b>, A Complex Network Analysis of the OPEC Crude Oil Trade Network. <a href="https://www.isgns2023.com/">https://www.isgns2023.com/</a>'
-    year: "2024"
-
-  - content: '<b>Nov., 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">Complex Valued U-Net for Segmentation of PolSAR Images</b> [ISG - ISRS 2023 National Symposium] <a href="https://www.isgns2023.com">https://www.isgns2023.com/</a>'
+  - content: '<b>Nov., 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">Complex Valued U-Net for Segmentation of PolSAR Images</b>Indian Society of Geomatics - Indian Society of Remote Sensing National Symposium 2023 <a href="https://www.isgns2023.com">https://www.isgns2023.com/</a>'
     year: "2023"
-    
-  - content: '<b>Jun., 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">NAPC 2025</b>, Combined FFT and Wavelet Analysis of Schlieren and Flame Luminosity Time-Series to Visualize Regions of Combustion Instability. <a href="https://nccrd.iitm.ac.in/napc-2025/index.html">https://nccrd.iitm.ac.in/napc-2025/index.html</a>'
-    year: "preprint"
 
+  - content: '<b>Jun., 2025</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">National Aerospace Propulsion Conference 2025</b>, Combined FFT and Wavelet Analysis of Schlieren and Flame Luminosity Time-Series to Visualize Regions of Combustion Instability. <a href="https://nccrd.iitm.ac.in/napc-2025/index.html">https://nccrd.iitm.ac.in/napc-2025/index.html</a>'
+    year: "2025"
+  - content: '<b>Jul., 2025</b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fa8072;">The Tenth National Conference on Computer Vision, Pattern Recognition, Image Processing, and Graphics 2025</b>, HybridMorph: Towards usage of synthetic with real data for medical MR images registration. <a href="https://ncvpripg25.github.io/ncvpripg25/">https://ncvpripg25.github.io/ncvpripg25/</a>'
+    year: "2025"
+
+  - content: 'Estimating Non-Uniform Temperature Profiles in <b style="color:#fa8072;">Combustion Systems using Laser Absorption Spectroscopy</b> and Multi-Output Gaussian Process Regression. <a href="https://doi.org/10.36227/techrxiv.173273629.91677656/v1">DOI: 10.36227/techrxiv.173273629.91677656/v1</a> (Manuscript in preparation)'
+    year: "upcoming"

@@ -3,6 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* set theme before first paint — avoids a flash of the wrong mode */
+(function(){
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
 <title>Saumya Roy — ML / Computer Vision Research</title>
 <meta name="description" content="Saumya Roy — ML and computer vision researcher, MSc Data-Driven Health at KTH. Medical imaging, clinical NLP, signal processing, and deployed AI systems.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -20,16 +32,22 @@
 <nav class="nav">
   <div class="nav-inner">
     <a class="mark" href="#top"><span class="mono-tile">SR</span><span class="mono-name">SAUMYA&nbsp;ROY</span></a>
-    <div class="nav-links" id="navlinks">
-      <a href="#timeline">Path</a>
-      <a href="#work">Work</a>
-      <a href="#publications">Publications</a>
-      <a href="#writing">Writing</a>
-      <a href="#notes">Notes</a>
-      <a href="#about">About</a>
-      <a class="nav-cta" href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+    <div class="nav-right">
+      <div class="nav-links" id="navlinks">
+        <a href="#timeline">Path</a>
+        <a href="#work">Work</a>
+        <a href="#publications">Publications</a>
+        <a href="#writing">Writing</a>
+        <a href="#notes">Notes</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </div>
+      <button class="theme-toggle" id="themetoggle" type="button" aria-label="Switch colour theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 1 0 9.8 9.8Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></g></svg>
+      </button>
+      <button class="nav-toggle" id="navtoggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
     </div>
-    <button class="nav-toggle" id="navtoggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
   </div>
 </nav>
 
@@ -450,6 +468,22 @@
   </div>
 </footer>
 
+<script>
+/* light / dark toggle */
+(function(){
+  var root = document.documentElement;
+  var btn  = document.getElementById('themetoggle');
+  if (!btn) return;
+  var sync = function(){ btn.setAttribute('aria-pressed', root.getAttribute('data-theme') === 'dark'); };
+  sync();
+  btn.addEventListener('click', function(){
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    sync();
+  });
+})();
+</script>
 <script src="main.js"></script>
 </body>
 </html>

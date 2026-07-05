@@ -1,280 +1,455 @@
----
-layout: default
-title: Home
----
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4>Bio</h4>
-  <p> MSc Data-Driven Health Student at KTH Royal Institute of Technology, Stockholm Sweden.
-    Passionate
-    <a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning/Deep Learning</a>
-    enthusiast with 2.5 years of hands-on experience in
-    <a href="https://en.wikipedia.org/wiki/Data_analysis">data analysis</a> . Skilled at transforming raw data
-    into impactful insights and building
-    <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> models that drive smarter decisions.
-    With a strong foundation
-    in statistical analysis,
-    <a href="https://en.wikipedia.org/wiki/Data_and_information_visualization">data visualization</a>, and predictive
-    modeling, I’m always eager to push the boundaries of
-    what’s possible with data. I thrive on solving complex challenges and continuously learning to stay at the forefront
-    of
-    <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> and deep learning advancements.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saumya Roy — ML / Computer Vision Research</title>
+<meta name="description" content="Saumya Roy — ML and computer vision researcher, MSc Data-Driven Health at KTH. Medical imaging, clinical NLP, signal processing, and deployed AI systems.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 
+</head>
+<body>
 
-  </p>
-
-</div>
-
-
-<!-- ========== Education ==========
-<div class="docs-section" id="education">
-  <h4>Education</h4>
-        <div class="paper">
-          <p class="title"><b>University of North Carolina at Chapel Hill<b style="float:right;">Aug. 2024 - </b></b></p>
-          
-          <p>Ph.D. Student (Advisor: <a href="https://tianlong-chen.github.io/">Tianlong Chen</a>)</p>
-          <p></p>
-        </div>
-        <div class="paper">
-          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST) <b style="float:right;">Aug. 2021 - Aug. 2023</b></b></p>
-          
-          <p>M.S. in Industrial and Systems Engineering (Advisor: <a href="https://dsail.kaist.ac.kr/professor/">Chanyoung Park</a>)</p>
-          <p></p>
-        </div>
-      
-        <div class="paper">
-          <p class="title"><b>Hanyang University<b style="float:right;">Mar. 2015 - Aug. 2021</b></b></p>
-          
-          <p>B.S. in Industrial Engineering
-          <p></p>
-        </div>
-</div> -->
-
-<!-- ========== NEWS ========== -->
-<div class="docs-section" id="publi">
-  <h4>Publications</h4>
-
-  <ul class="tab-nav">
-    <li>
-      <div class="button" data-ref="#news-upcoming">Upcoming</div>
-    </li>
-    <li>
-      <div class="button active" data-ref="#news-2025">2025</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#news-2024">2024</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#news-2023">2023-Past</div>
-    </li>
-  </ul>
-
-  <div class="tab-content">
-       <div class="tab-pane active" id="news-2025">
-      {% assign news2025 = site.data.news.news | where: "year", "2025" %}
-      {% for news in news2025 %}
-      <div class="news">
-        <li>{{ news.content }}</li>
-      </div>
-      {% endfor %}
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="#top"><span class="mono-tile">SR</span><span class="mono-name">SAUMYA&nbsp;ROY</span></a>
+    <div class="nav-links" id="navlinks">
+      <a href="#timeline">Path</a>
+      <a href="#work">Work</a>
+      <a href="#publications">Publications</a>
+      <a href="#writing">Writing</a>
+      <a href="#notes">Notes</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
     </div>
-
-    <div class="tab-pane" id="news-2024">
-      {% assign news2024 = site.data.news.news | where: "year", "2024" %}
-      {% for news in news2024 %}
-      <div class="news">
-        <li>{{ news.content }}</li>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="news-2023">
-      {% assign news2023 = site.data.news.news | where: "year", "2023" %}
-      {% for news in news2023 %}
-      <li>{{ news.content }}</li>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="news-upcoming">
-      {% assign news2022 = site.data.news.news | where: "year", "upcoming" %}
-      {% for news in news2022 %}
-      <div class="news">
-        <li>{{ news.content }}</li>
-      </div>
-      {% endfor %}
-    </div>
-
+    <button class="nav-toggle" id="navtoggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
   </div>
-</div>
+</nav>
 
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="works">
-  <h4>My Works</h4>
-
-
-  <ul class="tab-nav">
-    <li>
-      <div class="button active" data-ref="#papers-thesis">Thesis</div>
-    </li>
-    <li>
-      <div class="button " data-ref="#papers-intern">Internship</div>
-    </li>
-    <li>
-      <div class="button" data-ref="#papers-maml">maml</div>
-    </li>
-    <li>
-      <div class="button " data-ref="#papers-others">Others</div>
-    </li>
-    <li>
-      <div class="button " data-ref="#papers-all">All</div>
-    </li>
-  </ul>
-
-  <div class="tab-content">
-    <!-- Tab: Preprint -->
-    <div class="tab-pane active" id="papers-thesis">
-      {% assign paperspreprint = site.data.publications.papers | where: "year", "thesis" %}
-      {% for paper in paperspreprint %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Presentation</a>
-          {% endif %}
+<!-- ================= HERO ================= -->
+<header id="top" class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-main">
+        <span class="eyebrow">Machine learning · computer vision · health</span>
+        <h1>Saumya Roy<span class="thin">.</span></h1>
+        <p class="role">Researcher turning <b>signals and images into structured understanding</b> — medical imaging, clinical NLP, and deployed AI systems. MSc Data-Driven Health @ KTH, Stockholm.</p>
+        <p class="interests">// research interests: AI for real-world impact — LLMs, medical imaging, retrieval systems, signal processing. Open to PhD &amp; thesis positions.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://frailty-agent.app.cloud.cbh.kth.se" target="_blank" rel="noopener"><span class="live"></span>See a system running</a>
+          <a class="btn" href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
+          <a class="btn" href="https://github.com/CaffineAddic" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="mailto:saumyaroy271@gmail.com">Email</a>
         </div>
       </div>
-      {% endfor %}
+      <figure class="hero-photo">
+        <img src="assets/headshot.png" alt="Portrait of Saumya Roy" width="194" height="194">
+      </figure>
     </div>
 
-    <!-- Tab: 2024 -->
-    <div class="tab-pane " id="papers-intern">
-      {% assign papers2024 = site.data.publications.papers | where: "year", "intern" %}
-      {% for paper in papers2024 %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Presentation</a>
-          {% endif %}
-        </div>
+    <!-- signature: a signal baseline drawn across the subject's own materials -->
+    <div class="signalstrip" aria-hidden="true">
+      <svg viewBox="0 0 1080 54" preserveAspectRatio="none">
+        <path class="wave" d="M0,27 L120,27 C150,27 150,10 180,10 C210,10 210,44 240,44 C270,44 270,27 300,27
+        L360,27 L372,6 L384,48 L396,18 L408,36 L420,27 L520,27
+        C545,27 545,14 560,20 C575,26 580,40 600,34 C620,28 630,12 660,27
+        L720,27 L735,27 L742,20 L749,34 L756,22 L763,32 L770,27 L860,27
+        C885,27 890,9 915,9 C940,9 945,45 970,45 C995,45 1000,27 1020,27 L1080,27"/>
+      </svg>
+      <div class="caption">
+        <span>PolSAR radar → flame Schlieren → HRV → spectra → detection</span>
+        <span>Stockholm · 59.3°N 18.1°E</span>
       </div>
-      {% endfor %}
     </div>
-
-    <!-- Tab: 2023-Past -->
-    <div class="tab-pane" id="papers-maml">
-      {% assign papers2023 = site.data.publications.papers | where: "year", "maml" %}
-      {% for paper in papers2023 %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Presentation</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-others">
-      {% assign papers2023 = site.data.publications.papers | where: "year", "others" %}
-      {% for paper in papers2023 %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Presentation</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Tab: 2023-Past -->
-    <div class="tab-pane" id="papers-all">
-      {% assign papersall = site.data.publications.papers %}
-      {% for paper in papersall %}
-      <div class="paper">
-        <p class="title"><b>{{ paper.title }}</b></p>
-        <p>{{ paper.authors }}</p>
-        <p><i>{{ paper.venue }}</i></p>
-        <div class="paper-buttons">
-          {% if paper.paper_pdf %}
-          <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-          {% endif %}
-          {% if paper.code %}
-          <a class="button" href="{{ paper.code }}" target="_blank">Presentation</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
   </div>
-</div>
+</header>
 
-<!-- ========== Mentee ========== -->
-<div class="docs-section" id="mentee">
-  <h4>REFERENCES</h4>
-  <p>
-    <!-- <b>Husain Kanchwala</b> Assistant Professor, Center for Automotive Research and Tribology, IIT Delhi
- Email: <a href="mailto:husaink@iitd.ac.in">husaink@iitd.ac.in</a>, Phone: +91-112-6548571. <br> -->
-    <b>Deepak Mishra</b> Department of Avionics, Indian Institute of Space Science and Technology,
- Email: <a href="mailto:deepak.mishra@iist.ac.in">deepak.mishra@iist.ac.in</a>, Phone: +91-471-2568583. <br>
-    <b>Marcos M. Raimundo</b> Assistant Professor, Institute of Computing, University of Campinas,
- Email: <a href="mailto:mraimundo@ic.unicamp.br">mraimundo@ic.unicamp.br</a>, Phone: +55-19-35210322. <br>
-    <!-- <b>Youran Qu</b> (Peking University), May 2024 - -->
-  </p>
+<!-- ================= NOW ================= -->
+<section class="block" id="now">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Currently</span><h2>Where I am now</h2></div>
+      <span class="note">2026 — Stockholm</span>
+    </div>
+    <div class="now reveal">
+      <div class="cell">
+        <div class="top"><span class="livedot"></span><h3>Research &amp; Teaching Assistant — KTH</h3></div>
+        <span class="where">Future Well Ageing · Forte programme</span>
+        <p>Building a bilingual agentic LLM assistant that helps pre-frail older adults find local activities — Swedish-first speech (KB-Whisper + Piper), semantic retrieval, live on KTH's GPU cloud. Advisors: S. Meijer, A. Darwich.</p>
+      </div>
+      <div class="cell">
+        <div class="top"><h3>Data Annotator — Neko Health</h3></div>
+        <span class="where">Preventive-health technology</span>
+        <p>Annotation, quality assurance, and edge-case discovery on RGB medical imaging to support machine-learning model development; built internal tooling to streamline the annotation workflow.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
+<!-- ================= TIMELINE ================= -->
+<section class="block" id="timeline">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">The path</span><h2>Roles, research &amp; education</h2></div>
+      <span class="note">Stockholm · India · France · Iceland</span>
+    </div>
 
+    <div class="tl-heads">
+      <span class="l">Education &amp; training</span>
+      <span class="r">Experience &amp; research</span>
+    </div>
+    <div class="timeline">
+      <div class="tl-item exp reveal">
+        <span class="tl-node current"></span>
+        <div class="tl-date">Jun 2026 — Present<span class="tl-kind">Role</span></div>
+        <div class="tl-title">Research &amp; Teaching Assistant</div>
+        <div class="tl-org">KTH Royal Institute of Technology — Stockholm</div>
+        <div class="tl-detail">Future Well Ageing (Forte programme) · Advisors: S. Meijer, A. Darwich</div>
+      </div>
 
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Vitæ</h4>
+      <div class="tl-item edu reveal">
+        <span class="tl-node"></span>
+        <div class="tl-date">Jun 2026<span class="tl-kind">Training</span></div>
+        <div class="tl-title">Applied Psychophysiology &amp; Biofeedback</div>
+        <div class="tl-org">Reykjavík University / NeurotechEU — Iceland</div>
+        <div class="tl-detail">HRV science &amp; hands-on lab work · EU co-funded · 4 ECTS</div>
+      </div>
 
-  <p>Full CV in <a href="{{ site.data.main_info.cv }}" target="_blank">PDF</a>.</p>
+      <div class="tl-item exp reveal">
+        <span class="tl-node current"></span>
+        <div class="tl-date">May 2026 — Present<span class="tl-kind">Role</span></div>
+        <div class="tl-title">Data Annotator</div>
+        <div class="tl-org">Neko Health — Stockholm</div>
+        <div class="tl-detail">Annotation, QA &amp; edge-case discovery on RGB medical imaging; annotation tooling</div>
+      </div>
 
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-        {% else %}
-        <div class="direction-r">
-          {% endif %}
-          <div class="flag-wrapper">
-            <span class="flag">{{ exp.place }}</span>
-            <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-         </div>
-          <div class="desc">
-            <b>{{ exp.title }}</b><br />
-            {{ exp.subtitle }}<br />
-            <span class="country">{{ exp.country }}</span>
-          </div>
+      <div class="tl-item edu reveal">
+        <span class="tl-node"></span>
+        <div class="tl-date">Nov 2025<span class="tl-kind">Training</span></div>
+        <div class="tl-title">Unite! Research School</div>
+        <div class="tl-org">Grenoble INP · Université Grenoble Alpes — France</div>
+        <div class="tl-detail">One-week research boot-camp, AI focus · EU co-funded · 3 ECTS</div>
+      </div>
+
+      <div class="tl-item edu reveal">
+        <span class="tl-node"></span>
+        <div class="tl-date">Aug 2025 — Jul 2027<span class="tl-kind">Degree</span></div>
+        <div class="tl-title">M.Sc., Data-Driven Health</div>
+        <div class="tl-org">KTH Royal Institute of Technology — Stockholm</div>
+        <div class="tl-detail"><span class="gpa">GPA 4.80 / 5.0</span></div>
+      </div>
+
+      <div class="tl-item exp reveal">
+        <span class="tl-node"></span>
+        <div class="tl-date">Jun 2024 — Jan 2025<span class="tl-kind">Research</span></div>
+        <div class="tl-title">Research Intern</div>
+        <div class="tl-org">Indian Institute of Technology, Delhi</div>
+        <div class="tl-detail">Wheat-damage CNN (99.82%) · ESP32 construction-safety device · Advisors: A. Miglani, H. Kanchwala</div>
+      </div>
+
+      <div class="tl-item exp reveal">
+        <span class="tl-node"></span>
+        <div class="tl-date">May 2023 — Aug 2023<span class="tl-kind">Research</span></div>
+        <div class="tl-title">Summer Intern</div>
+        <div class="tl-org">National Remote Sensing Center, ISRO — Hyderabad</div>
+        <div class="tl-detail">Complex-valued U-Net for raw PolSAR segmentation · Host: Haripriya S.</div>
+      </div>
+
+      <div class="tl-item edu reveal">
+        <span class="tl-node"></span>
+        <div class="tl-date">Nov 2020 — May 2024<span class="tl-kind">Degree</span></div>
+        <div class="tl-title">B.Tech., Electronics &amp; Communication Engineering</div>
+        <div class="tl-org">Indian Institute of Space Science &amp; Technology — Kerala</div>
+        <div class="tl-detail">CGPA 7.28 / 10 · Undergraduate research w/ Prof. Deepak Mishra</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Selected work</span><h2>Research &amp; systems</h2></div>
+      <span class="note">every piece carries its number</span>
+    </div>
+
+    <div class="grid">
+
+      <!-- Aktivitetshjälpen -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag deployed">Deployed · live</span><span class="rank">KTH · Forte</span></div>
+        <h3>Aktivitetshjälpen — activity assistant for the pre-frail</h3>
+        <div class="meta">agentic LLM · KB-Whisper · Piper · semantic search</div>
+        <p class="desc">A bilingual assistant that helps older adults discover suitable local activities. Swedish-first speech pipeline, embedding retrieval over municipal event data, geospatial + weather-aware ranking, and a feedback loop feeding the research pilot.</p>
+        <div class="readout"><span class="label">Status</span><span class="value"><em>●</em> LIVE · sv/en</span></div>
+        <div class="links"><a href="https://frailty-agent.app.cloud.cbh.kth.se" target="_blank" rel="noopener">Open live demo ↗</a></div>
+      </article>
+
+      <!-- VisGrid drone -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Challenge · 3rd of 5</span><span class="rank">Team Hedgehog</span></div>
+        <h3>VisGrid drone classification</h3>
+        <div class="meta">Drone Defense Hackathon · KTH Center for Total Defence</div>
+        <p class="desc">Classify tracked objects as BIRD / DRONE / IRRELEVANT from multi-camera image sequences. Lightweight motion &amp; appearance features feeding a tuned tabular ensemble (ExtraTrees, XGBoost, LightGBM) — optimised for macro-F1 on a small dataset, no GPU.</p>
+        <div class="readout"><span class="label">Macro-F1</span><span class="value">0.9458</span></div>
+        <div class="links"><a href="https://dronedefensehackathon.se/" target="_blank" rel="noopener">Challenge ↗</a><a aria-disabled="true">Code on request</a></div>
+      </article>
+
+      <!-- NanoChat MIMIC -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Project · clinical NLP</span><span class="rank">KTH · w/ Yuxin Du</span></div>
+        <h3>Fine-tuning NanoChat on MIMIC-IV discharge notes</h3>
+        <div class="meta">transformer LM · domain adaptation · honest eval</div>
+        <p class="desc">Domain-adapted a transformer language model to clinical discharge summaries, then built a QA + hallucination evaluation that quantifies the gap between better language modelling and reliable clinical question answering.</p>
+        <div class="readout"><span class="label">Perplexity</span><span class="value">34.4 <em>→</em> 9.0</span></div>
+        <div class="links"><a href="assets/reports/nanochat-mimic.pdf" target="_blank" rel="noopener">Read report ↗</a></div>
+      </article>
+
+      <!-- HybridMorph -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Paper + code</span><span class="rank">NCVPRIPG 2025</span></div>
+        <h3>HybridMorph — MR image registration</h3>
+        <div class="meta">semi-supervised · spatial transformers · TensorFlow</div>
+        <p class="desc">Aligns medical MR images from hybrid real + synthetic data sources, using spatial transformers to cut the amount of real training data needed for accurate registration.</p>
+        <div class="readout"><span class="label">Accuracy</span><span class="value"><em>+</em>9.2% <span style="color:var(--ink-faint)">limited data</span></span></div>
+        <div class="links"><a href="https://doi.org/10.36227/techrxiv.173273622.27560352/v1" target="_blank" rel="noopener">Paper ↗</a><a href="https://github.com/CaffineAddic/HybridMorph" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <!-- LAS + MOGPR -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Paper + thesis</span><span class="rank">IIST · in prep</span></div>
+        <h3>Temperature fields from laser absorption + Gaussian processes</h3>
+        <div class="meta">LAS · multi-output GPR · Boltzmann parameterisation</div>
+        <p class="desc">Reconstructs non-uniform temperature profiles inside a combustor from a single molecular absorption transition, using multi-output Gaussian-process regression and testing robustness to spectral noise against experimental data.</p>
+        <div class="readout"><span class="label">RMSE (sim)</span><span class="value">19.9 <em>·</em> ±20 K exp</span></div>
+        <div class="links"><a href="assets/reports/las-mogpr-thesis.pdf" target="_blank" rel="noopener">Thesis ↗</a><a href="assets/reports/las-mogpr-slides.pdf" target="_blank" rel="noopener">Slides ↗</a><a href="https://doi.org/10.36227/techrxiv.173273629.91677656/v1" target="_blank" rel="noopener">doi ↗</a></div>
+      </article>
+
+      <!-- MAML -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Project · meta-learning</span><span class="rank">FS-DSC 2024</span></div>
+        <h3>MAML vs. FOMAML on few-shot classification</h3>
+        <div class="meta">Omniglot · learn2learn · PyTorch</div>
+        <p class="desc">Compared Model-Agnostic Meta-Learning against its first-order approximation on few-shot character recognition, testing when dropping the second-order (Hessian) term is safe — and quantifying the accuracy/speed trade-off.</p>
+        <div class="readout"><span class="label">FOMAML acc</span><span class="value">0.970 <em>·</em> 5% faster</span></div>
+        <div class="links"><a href="assets/reports/maml-fomaml.pdf" target="_blank" rel="noopener">Report ↗</a><a href="assets/reports/maml-fomaml-slides.pdf" target="_blank" rel="noopener">Slides ↗</a></div>
+      </article>
+
+      <!-- PolSAR -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Research · remote sensing</span><span class="rank">NRSC · ISRO</span></div>
+        <h3>Complex-valued U-Net for PolSAR segmentation</h3>
+        <div class="meta">Pauli decomposition · complex CNN · raw data</div>
+        <p class="desc">Segments raw Polarimetric SAR imagery directly in the complex domain via the Pauli representation, avoiding the domain shift introduced by converting radar data to real-valued inputs.</p>
+        <div class="readout"><span class="label">Input</span><span class="value">RAW POLSAR · CV-CNN</span></div>
+        <div class="links"><a href="assets/reports/polsar-cvnn-thesis.pdf" target="_blank" rel="noopener">Report ↗</a><a href="assets/reports/polsar-cvnn-slides.pdf" target="_blank" rel="noopener">Slides ↗</a><a aria-disabled="true">ISG-ISRS 2023</a></div>
+      </article>
+
+      <!-- HRV -->
+      <article class="card reveal">
+        <div class="kind"><span class="tag">Study · psychophysiology</span><span class="rank">Reykjavík · NeurotechEU</span></div>
+        <h3>HRV under cognitive vs. social-evaluative stress</h3>
+        <div class="meta">Polar H10 · time + frequency domain · effect sizes</div>
+        <p class="desc">A within-subject HRV experiment testing whether social observation deepens stress. Found parasympathetic <em>engagement</em>, not suppression — a clean case study in reading physiological signals honestly against a directional hypothesis.</p>
+        <div class="readout"><span class="label">Signal</span><span class="value">1,230 IBIs · |d|&gt;0.8</span></div>
+        <div class="links"><a href="assets/reports/hrv-stress.pdf" target="_blank" rel="noopener">Read report ↗</a></div>
+      </article>
+
+    </div>
+
+    <p class="colophon reveal">Earlier research also includes a CNN for wheat-grain damage detection at IIT Delhi (99.82% accuracy), an ESP32 construction-safety edge device (98.3%), FFT + wavelet analysis of combustion instability, and a complex-network study of the OPEC crude-oil trade — see publications below.</p>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section class="block" id="publications">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Peer-reviewed &amp; preprints</span><h2>Publications</h2></div>
+      <span class="note">first author on all</span>
+    </div>
+    <div class="pubs reveal">
+      <div class="pub">
+        <div class="idx">01</div>
+        <div>
+          <div class="t">HybridMorph: Bridging the Gap between Synthetic and Real Data for Accurate MR Image Registration</div>
+          <div class="a">S. V. Roy, D. Mishra, M. M. Raimundo</div>
+          <div class="v"><span>National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics (NCVPRIPG), 2025</span><a href="https://doi.org/10.36227/techrxiv.173273622.27560352/v1" target="_blank" rel="noopener">doi ↗</a></div>
         </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+      </div>
+      <div class="pub">
+        <div class="idx">02</div>
+        <div>
+          <div class="t">Estimating Non-Uniform Temperature Profiles in Combustion Systems using Laser Absorption Spectroscopy and Multi-Output Gaussian Process Regression</div>
+          <div class="a">S. V. Roy, D. Mishra, Satheesh K., R. Sadananan</div>
+          <div class="v"><span>Manuscript in preparation</span><a href="assets/reports/las-mogpr-thesis.pdf" target="_blank" rel="noopener">thesis ↗</a><a href="assets/reports/las-mogpr-slides.pdf" target="_blank" rel="noopener">slides ↗</a><a href="https://doi.org/10.36227/techrxiv.173273629.91677656/v1" target="_blank" rel="noopener">doi ↗</a></div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="idx">03</div>
+        <div>
+          <div class="t">Combined FFT and Wavelet Analysis of Schlieren and Flame Luminosity Time-Series to Visualize Regions of Combustion Instability</div>
+          <div class="a">S. V. Roy, D. Mishra, R. Sadananan</div>
+          <div class="v"><span>National Aerospace Propulsion Conference (NAPC), 2025</span><a href="assets/reports/combustion-fft-wavelet.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.36227/techrxiv.173950915.52984530/v1" target="_blank" rel="noopener">doi ↗</a></div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="idx">04</div>
+        <div>
+          <div class="t">A Complex Network Analysis of the OPEC Crude Oil Trade Network</div>
+          <div class="a">S. V. Roy, Manoj B.S.</div>
+          <div class="v"><span>Recent Advances in Intelligent Computational Systems (RAICS), 2024</span><a href="assets/reports/opec-network.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.36227/techrxiv.171169316.66809297/v2" target="_blank" rel="noopener">doi ↗</a><a href="https://dx.doi.org/10.21227/m8ds-nd06" target="_blank" rel="noopener">dataset ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WRITING ================= -->
+<section class="block" id="writing">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Health systems, ethics &amp; policy</span><h2>Writing &amp; analysis</h2></div>
+      <span class="note">the other half of data-driven health</span>
+    </div>
+    <div class="writing reveal">
+      <a class="witem" href="assets/reports/blockchain-health-ethics.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Ethics · CM2029</span>
+        <h3>Blockchain for health data — the ethical dilemmas</h3>
+        <p>Ownership, consent, and immutability weighed against autonomy, beneficence, justice and non-maleficence — with a revised, consent-first framework.</p>
+        <span class="go">Read PDF ↗</span>
+      </a>
+      <a class="witem" href="assets/reports/low-value-care.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Systems · CM2030</span>
+        <h3>Why market forces don't reduce low-value care</h3>
+        <p>A logistics and systems reading of why waste persists in healthcare: hidden prices, information asymmetry, activity-based incentives, and the wrong-pocket problem.</p>
+        <span class="go">Read PDF ↗</span>
+      </a>
+      <a class="witem" href="assets/reports/sepsis-logistics.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Logistics · CM2030</span>
+        <h3>The sepsis clinical pathway as healthcare logistics</h3>
+        <p>Reading Sweden's national sepsis pathway as a purposive system — waiting times, processing delays, and where each step drives cost and outcomes.</p>
+        <span class="go">Read PDF ↗</span>
+      </a>
+      <a class="witem" href="assets/reports/india-clinical-trial-hub.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Feasibility · systems</span>
+        <h3>India as a clinical-trial hub for AI medical devices</h3>
+        <p>A feasibility study on validating EU-bound AI medical devices in India — data ownership, cross-border regulation, quality and coverage, and stakeholder incentives.</p>
+        <span class="go">Read PDF ↗</span>
+      </a>
+      <a class="witem" href="assets/reports/luminetics-rail-license.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Responsible AI · license</span>
+        <h3>A Responsible AI License for a diagnostic device</h3>
+        <p>Drafting a RAIL for an autonomous diabetic-retinopathy detector: qualified users, data protection, transparency duties, and limits on over-reliance.</p>
+        <span class="go">Read PDF ↗</span>
+      </a>
+      <a class="witem" href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Full record</span>
+        <h3>Curriculum vitae</h3>
+        <p>The complete two-page academic CV — education, research experience, publications, projects, training, skills and awards.</p>
+        <span class="go">Open CV ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTES & TALKS ================= -->
+<section class="block" id="notes">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Technical notes &amp; journal club</span><h2>Notes &amp; talks</h2></div>
+      <span class="note">reading the field, explaining it</span>
+    </div>
+    <div class="writing reveal">
+      <a class="witem" href="assets/reports/clustering-methods.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Note · unsupervised ML</span>
+        <h3>A tour of clustering methods</h3>
+        <p>K-Means and K-Means++, Mean Shift, DBSCAN and HDBSCAN — how each works, what it assumes, where it breaks, with runtime comparisons on generated data.</p>
+        <span class="go">Read PDF ↗</span>
+      </a>
+      <a class="witem" href="assets/reports/nnp-water-review.pdf" target="_blank" rel="noopener">
+        <span class="wtag">Paper review · ML for physics</span>
+        <h3>Perturbed neural network potentials for electric-field response</h3>
+        <p>A journal-club review of Joll et al. (2024) on machine-learning the electric-field response of condensed-phase systems with perturbed neural network potentials.</p>
+        <span class="go">View slides ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Background</span><h2>Toolkit &amp; recognition</h2></div>
+    </div>
+    <div class="cols">
+      <div class="reveal">
+        <div class="subhead">Awards</div>
+        <ul class="awards">
+          <li><span class="m">3rd</span><span><b>Student Flash Talks</b> — Frontiers Symposium in Data Science, IISER Trivandrum, 2024</span></li>
+          <li><span class="m">Top 2%</span><span><b>JEE Main &amp; Advanced</b> — India, 2020</span></li>
+          <li><span class="m">★</span><span><b>Department of Space scholarship</b> — Govt. of India, for undergraduate studies</span></li>
+        </ul>
+
+        <div class="subhead">Education &amp; training</div>
+        <ul class="awards">
+          <li><span class="m">MSc</span><span><b>Data-Driven Health</b> — KTH · GPA 4.80/5.0 · 2025–27</span></li>
+          <li><span class="m">BTech</span><span><b>Electronics &amp; Comm. Eng.</b> — IIST · 2020–24</span></li>
+          <li><span class="m">ECTS</span><span>Unite! Research School (Grenoble) · Biofeedback &amp; HRV (Reykjavík)</span></li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <div class="subhead">Languages</div>
+        <div class="chiplist">
+          <span class="chip">Python</span><span class="chip">C++</span><span class="chip">MATLAB</span><span class="chip">R</span><span class="chip">SQL</span><span class="chip">JavaScript</span>
+        </div>
+        <div class="subhead">ML / DL</div>
+        <div class="chiplist">
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">OpenCV</span><span class="chip">LLM fine-tuning</span><span class="chip">semantic search</span><span class="chip">medical imaging</span><span class="chip">signal processing</span>
+        </div>
+        <div class="subhead">Tools &amp; infrastructure</div>
+        <div class="chiplist">
+          <span class="chip">Git</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">KTH GPU cloud</span><span class="chip">LaTeX</span><span class="chip">KB-Whisper</span><span class="chip">Piper</span>
+        </div>
+        <div class="subhead">Domains</div>
+        <div class="chiplist">
+          <span class="chip">medical imaging</span><span class="chip">clinical NLP</span><span class="chip">remote sensing</span><span class="chip">computer vision</span><span class="chip">health systems</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>Let's talk research.</h2>
+        <span class="open"><span class="livedot"></span>Open to PhD &amp; thesis positions · 2026–27</span>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:saumyaroy271@gmail.com">saumyaroy271@gmail.com</a>
+        <a href="https://linkedin.com/in/saumyaoy" target="_blank" rel="noopener">linkedin.com/in/saumyaoy ↗</a>
+        <a href="https://github.com/CaffineAddic" target="_blank" rel="noopener">github.com/CaffineAddic ↗</a>
+        <a href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+        <a class="lic" href="LICENSE" target="_blank" rel="noopener">© 2026 · MIT licensed</a>
+      </div>
+    </div>
+    <div class="colophon">Stockholm, Sweden · Familjen Grotesk + IBM Plex · built by hand, 2026</div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

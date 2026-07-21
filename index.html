@@ -203,11 +203,11 @@
 
       <!-- Aktivitetshjälpen -->
       <article class="card reveal">
-        <div class="kind"><span class="tag deployed">Deployed · live</span><span class="rank">KTH · Forte</span></div>
+        <div class="kind"><span class="tag deployed">Deployed · v6.16</span><span class="rank">KTH · Forte</span></div>
         <h3>Aktivitetshjälpen — activity assistant for the pre-frail</h3>
-        <div class="meta">agentic LLM · KB-Whisper · Piper · semantic search</div>
-        <p class="desc">A bilingual assistant that helps older adults discover suitable local activities. Swedish-first speech pipeline, embedding retrieval over municipal event data, geospatial + weather-aware ranking, and a feedback loop feeding the research pilot.</p>
-        <div class="readout"><span class="label">Status</span><span class="value"><em>●</em> LIVE · sv/en</span></div>
+        <div class="meta">Qwen3-8B agent · KB-Whisper · Piper · hybrid semantic search · FastAPI</div>
+        <p class="desc">A bilingual agentic LLM assistant helping pre-frail older adults find local activities. Tool-calling agent over Qwen3-8B with hybrid keyword-boosted semantic search (nomic-embed-text), honesty guards for weak matches, 11-table data model scraping 26 municipalities + SPF Seniorerna daily, CPU-only speech pipeline (KB-Whisper int8, 4–7s latency), WCAG AA accessible UI, consent-gated family sharing, and admin analytics dashboard.</p>
+        <div class="readout"><span class="label">Status</span><span class="value"><em>●</em> LIVE · 26 sources · sv/en</span></div>
         <div class="links"><a href="https://frailty-agent.app.cloud.cbh.kth.se" target="_blank" rel="noopener">Open live demo ↗</a></div>
       </article>
 
@@ -250,36 +250,6 @@
         <div class="readout"><span class="label">RMSE (sim)</span><span class="value">19.9 <em>·</em> ±20 K exp</span></div>
         <div class="links"><a href="assets/reports/las-mogpr-thesis.pdf" target="_blank" rel="noopener">Thesis ↗</a><a href="assets/reports/las-mogpr-slides.pdf" target="_blank" rel="noopener">Slides ↗</a><a href="https://doi.org/10.36227/techrxiv.173273629.91677656/v1" target="_blank" rel="noopener">doi ↗</a></div>
       </article>
-
-      <!-- Skattråd -->
-<article class="card reveal">
-  <div class="kind">
-    <span class="tag">Agentic AI</span>
-    <span class="rank">Google ADK · NVIDIA NIM</span>
-  </div>
-
-  <h3>Skattråd — grounded AI for Swedish compliance</h3>
-
-  <div class="meta">
-RAG · tool calling · tax &amp; corporate law
-  </div>
-
-  <p class="desc">
-    Agentic assistant that answers Swedish VAT, tax, labour, and corporate-law
-    questions by retrieving live information from official government sources.
-  </p>
-
-  <div class="readout">
-    <span class="label">Evaluation</span>
-    <span class="value">3 / 3 benchmark cases</span>
-  </div>
-
-  <div class="links">
-    <a href="https://github.com/CaffineAddic/Skattrad-an_agent" target="_blank" rel="noopener">GitHub ↗</a>
-    <a href="assets/reports/skattrad-compliance-agent.pdf" target="_blank" rel="noopener">Report ↗</a>
-    <a href="assets/reports/skattrad-demo.pdf" target="_blank" rel="noopener">Demo ↗</a>
-  </div>
-</article>
 
       <!-- MAML -->
       <article class="card reveal">
@@ -441,6 +411,11 @@ RAG · tool calling · tax &amp; corporate law
     </div>
     <div class="cols">
       <div class="reveal">
+        <div class="subhead">Professional service</div>
+        <ul class="awards">
+          <li><span class="m">2026</span><span><b>Reviewer</b> — International Joint Conference on Neural Networks (IJCNN), IEEE World Congress on Computational Intelligence (WCCI), Maastricht</span></li>
+        </ul>
+
         <div class="subhead">Awards</div>
         <ul class="awards">
           <li><span class="m">3rd</span><span><b>Student Flash Talks</b> — Frontiers Symposium in Data Science, IISER Trivandrum, 2024</span></li>

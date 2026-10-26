@@ -25,6 +25,41 @@
 <link rel="stylesheet" href="style.css">
 <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 
+<style>
+/* ---- Playbook feature (self-contained; inherits page colours via currentColor) ---- */
+.pb{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center;border:1px solid color-mix(in srgb,currentColor 16%,transparent);border-radius:14px;padding:28px;position:relative;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .25s,transform .25s}
+.pb:hover{border-color:#0C6F79;transform:translateY(-2px)}
+.pb::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 220px at 85% 0%,rgba(12,111,121,.16),transparent 70%);pointer-events:none}
+.pb h3{font-size:clamp(22px,3.2vw,30px);line-height:1.1;margin:8px 0 10px;letter-spacing:-.02em}
+.pb p{margin:0 0 16px;opacity:.82;max-width:52ch}
+.pb .pb-tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#0C6F79}
+.pb-stats{display:flex;gap:22px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;margin:0 0 18px}
+.pb-stats b{display:block;font-size:22px;font-weight:600}
+.pb-stats span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.6}
+.pb-go{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#0C6F79;font-weight:500}
+.pb:hover .pb-go{text-decoration:underline}
+.pb-term{font-family:"IBM Plex Mono",monospace;font-size:13px;background:#11141A;color:#E9ECF1;border-radius:10px;padding:14px 16px 16px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45);min-height:208px;position:relative}
+.pb-term .bar{display:flex;gap:6px;margin-bottom:12px}.pb-term .bar i{width:9px;height:9px;border-radius:50%;background:#3A4252}
+.pb-term .bar i:first-child{background:#E3A862}
+.pb-q{color:#7FD4DB;min-height:38px}.pb-q::before{content:"? ";color:#737D8D}
+.pb-tr{display:inline-block;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#E3A862;border:1px solid #5A431F;border-radius:3px;padding:0 5px;margin-right:6px}
+.pb-a{color:#A5AEBC;margin-top:10px;line-height:1.55;opacity:0;transform:translateY(4px);transition:opacity .45s,transform .45s}
+.pb-a.on{opacity:1;transform:none}.pb-a b{color:#E9ECF1;font-weight:500}
+.pb-cur{display:inline-block;width:7px;height:14px;background:#43B8C2;vertical-align:-2px;margin-left:2px;animation:pbblink 1s steps(1) infinite}
+@keyframes pbblink{50%{opacity:0}}
+@media (max-width:760px){.pb{grid-template-columns:1fr;padding:20px}}
+@media (prefers-reduced-motion:reduce){.pb-cur{animation:none}.pb,.pb-a,.pb-run{transition:none}}
+.pb+.pb{margin-top:18px}
+.pb-flip>div:first-child{order:2}.pb-flip::before{background:radial-gradient(600px 220px at 15% 0%,rgba(227,168,98,.16),transparent 70%)}
+.pb-flip:hover{border-color:#E3A862}
+.pb-term .bar{align-items:center}.pb-term .fn{margin-left:auto;font-size:11px;color:#737D8D}
+.pb-code{margin:0;font:inherit;white-space:pre;color:#E9ECF1;min-height:118px;overflow:hidden}
+.pb-code .k{color:#C792EA}.pb-code .f{color:#7FD4DB}.pb-code .c{color:#737D8D}
+.pb-run{margin-top:10px;color:#63C492;opacity:0;transition:opacity .4s}.pb-run.on{opacity:1}
+.kit-steps{display:flex;align-items:center;gap:12px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.65;margin:0 0 16px}
+.kit-steps i{flex:1;height:1px;background:linear-gradient(90deg,#0C6F79,#E3A862)}
+@media (max-width:760px){.pb-flip>div:first-child{order:0}}
+</style>
 </head>
 <body>
 
@@ -37,6 +72,7 @@
         <a href="#timeline">Path</a>
         <a href="#work">Work</a>
         <a href="#publications">Publications</a>
+        <a href="#kit">Interview kit</a>
         <a href="#writing">Writing</a>
         <a href="#notes">Notes</a>
         <a href="#about">About</a>
@@ -331,6 +367,47 @@
   </div>
 </section>
 
+<!-- ================= INTERVIEW KIT ================= -->
+<section class="block" id="kit">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <div><span class="eyebrow">Open resources</span><h2>The interview kit</h2></div>
+      <span class="note">two free sites · code it, then say it</span>
+    </div>
+    <div class="kit-steps reveal" aria-hidden="true"><span>01 · write the code</span><i></i><span>02 · explain it out loud</span></div>
+
+    <a class="pb reveal" href="https://caffineaddic.github.io/vibe-coder-bootcamp/" target="_blank" rel="noopener" aria-label="Open Vibe Coder Bootcamp">
+      <div>
+        <span class="pb-tag">01 · Vibe Coder Bootcamp</span>
+        <h3>Write the code yourself. No autocomplete.</h3>
+        <p>A browser-based Python course that climbs from basics to NumPy, pandas, PyTorch and attention — every exercise runs real tests, with pseudocode and hints held back until you've tried, a 20-minute interview timer, and a plan for when you freeze.</p>
+        <div class="pb-stats"><div><b>0</b><span>AI assistance</span></div><div><b>20′</b><span>interview timer</span></div><div><b>✓</b><span>runnable tests</span></div></div>
+        <span class="pb-go">Start coding ↗</span>
+      </div>
+      <div class="pb-term" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span class="fn">attention.py</span></div>
+        <pre class="pb-code" id="bcc"></pre>
+        <div class="pb-run" id="bcr"></div>
+      </div>
+    </a>
+
+    <a class="pb pb-flip reveal" href="https://caffineaddic.github.io/ml-interview-playbook/" target="_blank" rel="noopener" aria-label="Open the ML Interview Playbook">
+      <div>
+        <span class="pb-tag">02 · ML Interview Playbook</span>
+        <h3>Answers you can say, not topics you recognise.</h3>
+        <p>A recall-first study site: every card is the sentence you'd speak in the room, collapsed so you test yourself. Transformers, LLMs &amp; agents, RAG, classical ML, MLOps, system design — and the registration and medical-imaging traps from my own research.</p>
+        <div class="pb-stats"><div><b>176</b><span>question cards</span></div><div><b>26</b><span>sections</span></div><div><b>60</b><span>trick questions</span></div></div>
+        <span class="pb-go">Open the playbook ↗</span>
+      </div>
+      <div class="pb-term" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span class="fn">recall mode</span></div>
+        <div class="pb-q" id="pbq"></div>
+        <div class="pb-a" id="pba"></div>
+      </div>
+    </a>
+  </div>
+</section>
+
 <!-- ================= WRITING ================= -->
 <section class="block" id="writing">
   <div class="wrap">
@@ -465,6 +542,8 @@
         <a href="mailto:saumyaroy271@gmail.com">saumyaroy271@gmail.com</a>
         <a href="https://linkedin.com/in/saumyaoy" target="_blank" rel="noopener">linkedin.com/in/saumyaoy ↗</a>
         <a href="https://github.com/CaffineAddic" target="_blank" rel="noopener">github.com/CaffineAddic ↗</a>
+        <a href="https://caffineaddic.github.io/vibe-coder-bootcamp/" target="_blank" rel="noopener">Vibe Coder Bootcamp ↗</a>
+        <a href="https://caffineaddic.github.io/ml-interview-playbook/" target="_blank" rel="noopener">ML Interview Playbook ↗</a>
         <a href="assets/Saumya_Roy_CV.pdf" target="_blank" rel="noopener">Download CV ↗</a>
         <a class="lic" href="LICENSE" target="_blank" rel="noopener">© 2026 · MIT licensed</a>
       </div>
@@ -487,6 +566,58 @@
     try { localStorage.setItem('theme', next); } catch (e) {}
     sync();
   });
+})();
+</script>
+<script>
+/* playbook teaser: types a question, then reveals the answer */
+(function(){
+  var q=document.getElementById('pbq'),a=document.getElementById('pba');if(!q)return;
+  var D=[
+   [1,'Does backprop update the weights?','<b>No — it computes gradients.</b> The optimiser applies the update.'],
+   [0,'Why divide attention scores by √dₖ?','Keeps score variance near 1, so softmax <b>doesn\'t saturate</b> and gradients survive.'],
+   [1,'Is a CNN translation invariant?','<b>Equivariant, not invariant.</b> Shift the input, the feature maps shift too.'],
+   [0,'The RAG answer is wrong. Look where first?','<b>Retrieval.</b> If the right chunk never reached the prompt, no prompt fixes it.'],
+   [1,'Could an STN use nearest-neighbour sampling?','<b>No</b> — zero gradient almost everywhere. Bilinear is what makes it trainable.']
+  ];
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,i=0;
+  function show(){
+    var d=D[i++%D.length],t=d[1],n=0,pre=d[0]?'<span class="pb-tr">Trick</span> ':'';
+    a.classList.remove('on');
+    if(reduce){q.innerHTML=pre+t;a.innerHTML=d[2];a.classList.add('on');setTimeout(show,6000);return;}
+    (function type(){
+      q.innerHTML=pre+t.slice(0,n)+'<span class="pb-cur"></span>';
+      if(n++<t.length)return setTimeout(type,32);
+      setTimeout(function(){a.innerHTML=d[2];a.classList.add('on');},500);
+      setTimeout(show,4800);
+    })();
+  }
+  show();
+})();
+</script>
+<script>
+/* bootcamp teaser: types a function, then runs the tests */
+(function(){
+  var c=document.getElementById('bcc'),r=document.getElementById('bcr');if(!c)return;
+  var L=['<span class="k">def</span> <span class="f">attention</span>(Q, K, V):',
+         '    d = Q.shape[-1]',
+         '    s = Q @ K.T / np.sqrt(d)',
+         '    w = <span class="f">softmax</span>(s, axis=-1)',
+         '    <span class="k">return</span> w @ V'];
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function strip(h){return h.replace(/<[^>]+>/g,'');}
+  function run(){
+    r.classList.remove('on');c.innerHTML='';
+    if(reduce){c.innerHTML=L.join('\n');r.textContent='✓ 3/3 tests passed · 0.04s';r.classList.add('on');return;}
+    var li=0,n=0,done=[];
+    (function type(){
+      if(li>=L.length){setTimeout(function(){r.textContent='$ run tests  ✓ 3/3 passed · 0.04s';r.classList.add('on');},450);return setTimeout(run,5200);}
+      var plain=strip(L[li]);
+      c.innerHTML=done.concat([plain.slice(0,n)+'<span class="pb-cur"></span>']).join('\n');
+      if(n++<plain.length)return setTimeout(type,28);
+      done.push(L[li]);li++;n=0;setTimeout(type,120);
+    })();
+  }
+  run();
 })();
 </script>
 <script src="main.js"></script>
